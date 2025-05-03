@@ -7,6 +7,51 @@ body {
     background-attachment: fixed;
 }
 
+/* Enhanced Navbar Styling */
+.nav-item-active {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+/* Enhanced Footer Styling */
+.footer-link {
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.footer-link:hover {
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.15);
+}
+
+/* Original styles - keeping for backward compatibility */
 header {
     background-color: skyblue;
 }
@@ -118,7 +163,7 @@ main {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-contact-form button:hover {
+.contact-form button:hover {
     background-color: skyblue;
     color: navy;
 }
