@@ -1,0 +1,134 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background: url('../images/cover\ ST01.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: skyblue;
+}
+
+nav {
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: navy;
+}
+
+.cover-image {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
+    padding: 20px;
+    min-height: calc(100vh - 400px); /* Ensures footer stays at the bottom */
+}
+
+.container {
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-item img {
+    width: 300px; /* Standard size for all images */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Intro text styling */
+.intro-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+/* Contact form styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid navy;
+    padding: 30px;
+    margin: 50px auto;
+    width: 50%;
+    background: linear-gradient(to bottom, #add8e6, #87ceeb);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+contact-form button:hover {
+    background-color: skyblue;
+    color: navy;
+}
+
+footer {
+    background-color: skyblue;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
